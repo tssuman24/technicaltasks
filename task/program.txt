@@ -1,0 +1,138 @@
+1.Reverse string using python:
+
+string = input("Enter a string: ")
+reversed_string = string[::-1]
+print("The original string was:", string)
+print("The reversed string is:", reversed_string)
+
+OUTPUT:
+Enter a string: hello world
+The original string was: hello world
+The reversed string is: dlrow olleh
+
+
+2. Read and Write a file (Java):
+
+import java.util.Scanner;
+
+public class ReadWriteExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a line of text: ");
+        String input = scanner.nextLine();
+
+        System.out.println("You entered: " + input);
+    }
+}
+
+OUTPUT:
+Enter a line of text: hello world
+You entered: hello world
+
+3. program to print left half pyramid by python
+
+num = int(input("Enter the number of rows: "))
+
+for i in range(1, num + 1):
+    for j in range(1, i + 1):
+        print("*", end="")
+    print()
+
+OUTPUT:
+Enter the number of rows: 5
+*
+**
+***
+****
+*****
+
+4. Python program to print all pronic numbers between 1 and 100
+
+for i in range(1, 101):
+    if i == 1:
+        continue
+    if i*(i+1) <= 100:
+        print(i*(i+1), end=" ")
+    else:
+        break
+
+OUTPUT: 
+6 12 20 30 42 56 72 90 
+
+5. write a program to check the vowels in the string.
+   codoid innovations
+
+string = "codoid innovations"
+vowels = "aeiouAEIOU"
+count = 0
+
+for char in string:
+    if char in vowels:
+        count += 1
+
+print("The number of vowels in the string is:", count)
+
+OUTPUT:
+ The number of vowels in the string is: 8
+
+6.change the vowel charecters to "s"
+ python
+
+def replace_vowels_with_s(string):
+    vowels = "aeiouAEIOU"
+    new_string = ""
+    for char in string:
+        if char in vowels:
+            new_string += "S"
+        else:
+            new_string += char
+    return new_string
+
+  
+test_string = "python"
+new_string = replace_vowels_with_s(test_string)
+print(new_string)
+
+OUTPUT:
+Pythsn
+
+7.creat 10 test case for amazon website
+
+1,Verify that the Amazon logo is displayed on the top left corner of the home page.
+2,Verify that the search bar is present on the home page and can be used to search for products.
+3,Verify that the product categories menu is present and can be used to navigate to different product categories.
+4,Verify that the cart icon displays the correct number of items when products are added to the cart.
+5,Verify that the product detail page displays accurate information about the selected product, including its name, price, and description.
+6,Verify that the customer reviews section on the product detail page shows accurate reviews and ratings from other customers.
+7,Verify that the checkout process is easy to use and allows users to enter and verify their payment and shipping information.
+8,Verify that the "My Orders" page shows accurate information about the user's past orders, including the order status, items ordered, and shipping information.
+9,Verify that the "Wishlist" page allows users to save items for later and add them to their cart when they are ready to purchase.
+10,Verify that the website is responsive and works well on different screen sizes and devices, including desktops, tablets, and mobile phones.
+
+8.write a SQL to find  duplicate records
+
+SELECT email, COUNT(*) as count
+FROM employees
+GROUP BY email
+HAVING COUNT(*) > 1;
+
+9.use diffrent operators in SQL
+
+1,Arithmetic Operators
+2,Comparison Operators
+3,Logical Operators
+4,String Operators :
+        SELECT CONCAT(first_name, ' ', last_name) AS full_name FROM table1;
+        SELECT * FROM table1 WHERE column1 LIKE '%value%';
+
+10.What are scalar functions and write a query
+
+Scalar functions are a type of function in SQL that take a single input value and return a single output value. They are commonly used to perform calculations or transformations on individual values within a query
+
+Here is an example query that uses a scalar function to convert a temperature value from Celsius to Fahrenheit:
+SELECT temperature, (temperature * 1.8) + 32 AS fahrenheit
+FROM temperature_table;
+
+
+
